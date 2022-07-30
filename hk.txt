@@ -1,0 +1,21 @@
+import numpy as numpy
+import pandas as pd
+
+heights_A= pd.Series([176.2,158.4,167.6,156.2,161.4])
+index_ = ['s1', 's2', 's3', 's4', 's5']
+heights_A.index = index_
+print(heights_A.shape)
+
+#Task 2
+
+weights_A=pd.Series([85.1,90.2,76.8,80.4,78.9])
+index_ = ['s1', 's2', 's3', 's4', 's5']
+weights_A.index = index_
+print(weights_A.dtype)
+
+
+#Task3
+df_A = {  "Student_height": heights_A,
+          "Student_weight": weights_A}
+df=pd.DataFrame(df_A)
+print(df)
